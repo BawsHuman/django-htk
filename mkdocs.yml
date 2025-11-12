@@ -1,0 +1,324 @@
+site_name: Django HTK (Hack Toolkit)
+site_description: Production-ready Django toolkit with 29 apps, 47+ integrations, and 24 utility categories
+site_author: Jonathan Tsai & HTK Contributors
+site_url: https://hacktoolkit.github.io/django-htk/
+repo_url: https://github.com/hacktoolkit/htk-django-skeleton
+repo_name: htk-django-skeleton
+copyright: Copyright &copy; 2024 HTK Contributors. MIT License.
+
+theme:
+  name: material
+  logo: https://raw.githubusercontent.com/hacktoolkit/htk-django-skeleton/master/static/htk/images/htk-logo.png
+  favicon: https://raw.githubusercontent.com/hacktoolkit/htk-django-skeleton/master/static/htk/images/htk-favicon.ico
+
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - offline
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: ../README.md
+
+  - Core Modules:
+    - Admin: ../admin/README.md
+    - API:
+      - API: ../api/README.md
+      - Auth: ../api/auth/README.md
+    - Cache:
+      - Cache: ../cache/README.md
+      - Constants: ../cache/constants/README.md
+    - Constants:
+      - Constants: ../constants/README.md
+      - DNS: ../constants/dns/README.md
+      - Emails: ../constants/emails/README.md
+      - I18n: ../constants/i18n/README.md
+    - Decorators: ../decorators/README.md
+    - Extensions:
+      - Extensions: ../extensions/README.md
+      - Data Structures: ../extensions/data_structures/README.md
+    - Forms:
+      - Forms: ../forms/README.md
+      - Constants: ../forms/constants/README.md
+    - Middleware: ../middleware/README.md
+    - Models:
+      - Models: ../models/README.md
+      - Fields: ../models/fields/README.md
+    - Template Tags: ../templatetags/README.md
+    - Utils:
+      - Utils: ../utils/README.md
+      - Concurrency: ../utils/concurrency/README.md
+      - Data Structures: ../utils/data_structures/README.md
+      - HTTP: ../utils/http/README.md
+      - i18n: ../utils/i18n/README.md
+      - Logging: ../utils/log/README.md
+      - Math: ../utils/maths/README.md
+      - Measurements: ../utils/measurements/README.md
+      - Text: ../utils/text/README.md
+    - Validators: ../validators/README.md
+
+  - Feature Applications:
+    - Feature Applications: ../apps/README.md
+    - User & Organizations:
+      - Accounts:
+        - Accounts: ../apps/accounts/README.md
+        - API: ../apps/accounts/api/README.md
+        - Constants: ../apps/accounts/constants/README.md
+        - Forms: ../apps/accounts/forms/README.md
+        - Utils: ../apps/accounts/utils/README.md
+      - Organizations:
+        - Organizations: ../apps/organizations/README.md
+        - Constants: ../apps/organizations/constants/README.md
+      - Addresses: ../apps/addresses/README.md
+      - Invitations:
+        - Invitations: ../apps/invitations/README.md
+        - Constants: ../apps/invitations/constants/README.md
+    - Communication:
+      - Conversations:
+        - Conversations: ../apps/conversations/README.md
+        - Constants: ../apps/conversations/constants/README.md
+      - Forums:
+        - Forums: ../apps/forums/README.md
+        - Constants: ../apps/forums/constants/README.md
+      - Notifications:
+        - Notifications: ../apps/notifications/README.md
+        - Constants: ../apps/notifications/constants/README.md
+    - Content & Commerce:
+      - Assessments: ../apps/assessments/README.md
+      - Bible:
+        - Bible: ../apps/bible/README.md
+        - Constants: ../apps/bible/constants/README.md
+        - Utils: ../apps/bible/utils/README.md
+      - CPQ:
+        - CPQ: ../apps/cpq/README.md
+        - Constants: ../apps/cpq/constants/README.md
+        - Utils: ../apps/cpq/utils/README.md
+      - Customers: ../apps/customers/README.md
+      - Feedback: ../apps/feedback/README.md
+      - Store:
+        - Store: ../apps/store/README.md
+        - Constants: ../apps/store/constants/README.md
+    - Storage & Infrastructure:
+      - Async Task: ../apps/async_task/README.md
+      - Blob Storage:
+        - Blob Storage: ../apps/blob_storage/README.md
+        - Constants: ../apps/blob_storage/constants/README.md
+      - File Storage:
+        - File Storage: ../apps/file_storage/README.md
+        - Constants: ../apps/file_storage/constants/README.md
+      - Key-Value Storage: ../apps/kv_storage/README.md
+      - Tokens: ../apps/tokens/README.md
+    - Features & Configuration:
+      - Features: ../apps/features/README.md
+      - Changelog:
+        - Changelog: ../apps/changelog/README.md
+        - Classes: ../apps/changelog/classes/README.md
+        - Constants: ../apps/changelog/constants/README.md
+        - Management:
+          - Commands: ../apps/changelog/management/commands/README.md
+      - Documentation Automation:
+        - Documentation Automation: ../apps/documentation_automation/README.md
+        - Management: ../apps/documentation_automation/management/README.md
+      - Geolocations:
+        - Geolocations: ../apps/geolocations/README.md
+        - Constants: ../apps/geolocations/constants/README.md
+      - i18n:
+        - i18n: ../apps/i18n/README.md
+        - Constants: ../apps/i18n/constants/README.md
+        - Utils: ../apps/i18n/utils/README.md
+      - Maintenance Mode:
+        - Maintenance Mode: ../apps/maintenance_mode/README.md
+        - Constants: ../apps/maintenance_mode/constants/README.md
+      - Mobile:
+        - Mobile: ../apps/mobile/README.md
+        - Constants: ../apps/mobile/constants/README.md
+      - Marketplace: ../apps/mp/README.md
+      - Prelaunch:
+        - Prelaunch: ../apps/prelaunch/README.md
+        - API: ../apps/prelaunch/api/README.md
+        - Constants: ../apps/prelaunch/constants/README.md
+        - Models: ../apps/prelaunch/models/README.md
+      - Sites: ../apps/sites/README.md
+      - URL Shortener: ../apps/url_shortener/README.md
+
+  - Service Integrations:
+    - Service Integrations: ../lib/README.md
+    - Cloud & Storage:
+      - AWS:
+        - AWS: ../lib/aws/README.md
+        - S3: ../lib/aws/s3/README.md
+      - Google Cloud: ../lib/google/README.md
+      - Mapbox: ../lib/mapbox/README.md
+      - MongoDB:
+        - MongoDB: ../lib/mongodb/README.md
+        - Constants: ../lib/mongodb/constants/README.md
+      - RabbitMQ: ../lib/rabbitmq/README.md
+    - Messaging & Communication:
+      - Alexa:
+        - Alexa: ../lib/alexa/README.md
+        - Constants: ../lib/alexa/constants/README.md
+      - Discord:
+        - Discord: ../lib/discord/README.md
+        - Constants: ../lib/discord/constants/README.md
+      - Google:
+        - Google: ../lib/google/README.md
+        - Chat:
+          - Chat: ../lib/google/chat/README.md
+          - Constants: ../lib/google/chat/constants/README.md
+        - Cloud Messaging: ../lib/google/cloud_messaging/README.md
+        - Gmail: ../lib/google/gmail/README.md
+        - Sheets: ../lib/google/sheets/README.md
+        - Translate: ../lib/google/translate/README.md
+      - Iterable:
+        - Iterable: ../lib/iterable/README.md
+        - Constants: ../lib/iterable/constants/README.md
+      - Mailchimp: ../lib/mailchimp/README.md
+      - OpenAI:
+        - OpenAI: ../lib/openai/README.md
+        - Constants: ../lib/openai/constants/README.md
+        - Models: ../lib/openai/models/README.md
+      - Plivo:
+        - Plivo: ../lib/plivo/README.md
+        - Constants: ../lib/plivo/constants/README.md
+      - Slack:
+        - Slack: ../lib/slack/README.md
+        - Beacon: ../lib/slack/beacon/README.md
+        - Constants: ../lib/slack/constants/README.md
+    - Social & OAuth:
+      - Facebook: ../lib/facebook/README.md
+      - GitHub:
+        - GitHub: ../lib/github/README.md
+        - Models: ../lib/github/models/README.md
+      - LinkedIn: ../lib/linkedin/README.md
+      - Twitter: ../lib/twitter/README.md
+    - Payments & Commerce:
+      - Stripe:
+        - Stripe: ../lib/stripe_lib/README.md
+        - Constants: ../lib/stripe_lib/constants/README.md
+      - Zuora:
+        - Zuora: ../lib/zuora/README.md
+        - Constants: ../lib/zuora/constants/README.md
+      - Shopify:
+        - Shopify: ../lib/shopify_lib/README.md
+        - Constants: ../lib/shopify_lib/constants/README.md
+    - Data & People:
+      - Airtable: ../lib/airtable/README.md
+      - DarkSky: ../lib/darksky/README.md
+      - FullContact:
+        - FullContact: ../lib/fullcontact/README.md
+        - Constants: ../lib/fullcontact/constants/README.md
+      - GeoIP: ../lib/geoip/README.md
+      - Gravatar: ../lib/gravatar/README.md
+    - Real Estate & Jobs:
+      - Glassdoor: ../lib/glassdoor/README.md
+      - Indeed:
+        - Indeed: ../lib/indeed/README.md
+        - API: ../lib/indeed/api/README.md
+      - Redfin: ../lib/redfin/README.md
+      - Yelp:
+        - Yelp: ../lib/yelp/README.md
+        - Constants: ../lib/yelp/constants/README.md
+      - Zillow: ../lib/zillow/README.md
+      - ZipRecruiter: ../lib/ziprecruiter/README.md
+    - Specialized Services:
+      - Fitbit:
+        - Fitbit: ../lib/fitbit/README.md
+        - Constants: ../lib/fitbit/constants/README.md
+      - Dynamic Screening Solutions:
+        - Dynamic Screening Solutions: ../lib/dynamic_screening_solutions/README.md
+        - Constants: ../lib/dynamic_screening_solutions/constants/README.md
+      - eGauge: ../lib/egauge/README.md
+      - Finality: ../lib/zesty/README.md
+      - OhMyGreen:
+        - OhMyGreen: ../lib/ohmygreen/README.md
+        - Constants: ../lib/ohmygreen/constants/README.md
+      - SFBart: ../lib/sfbart/README.md
+    - Data & Reference:
+      - Airtable: ../lib/airtable/README.md
+      - Bible Data:
+        - AwesomeBible: ../lib/awesomebible/README.md
+        - ESV: ../lib/esv/README.md
+        - LiteralWord: ../lib/literalword/README.md
+        - Songselect: ../lib/songselect/README.md
+      - YouTube:
+        - YouTube: ../lib/google/youtube/README.md
+      - QR Codes:
+        - QR Codes: ../lib/qrcode/README.md
+        - Constants: ../lib/qrcode/constants/README.md
+      - oEmbed: ../lib/oembed/README.md
+      - Yahoo:
+        - Yahoo: ../lib/yahoo/README.md
+        - Finance: ../lib/yahoo/finance/README.md
+        - Groups: ../lib/yahoo/groups/README.md
+        - Sports:
+          - Sports: ../lib/yahoo/sports/README.md
+          - Fantasy: ../lib/yahoo/sports/fantasy/README.md
+          - Scripts: ../lib/yahoo/sports/scripts/README.md
+    - Other Services:
+      - Amazon: ../lib/amazon/README.md
+      - Google Services:
+        - Geocoding: ../lib/google/geocode/README.md
+        - Maps: ../lib/google/maps/README.md
+        - reCAPTCHA: ../lib/google/recaptcha/README.md
+        - Google Constants: ../lib/google/constants/README.md
+
+  - Additional Resources:
+    - Admin Tools:
+      - Admin Tools: ../admintools/README.md
+      - Constants: ../admintools/constants/README.md
+    - Data:
+      - Data: ../data/README.md
+      - Countries: ../data/countries/README.md
+    - Scripts: ../scripts/README.md
+    - South Migrations: ../south_migrations/README.md
+    - Test Scaffold:
+      - Test Scaffold: ../test_scaffold/README.md
+      - Constants: ../test_scaffold/constants/README.md
+    - Static Assets:
+      - LESS Stylesheets: ../static/htk/less/README.md
+      - Tests: ../static/htk/less/test/README.md
+      - Bootstrap: ../static/htk/less/vendor/bootstrap/README.md
