@@ -1,19 +1,2 @@
 *.pyc
 
-# MkDocs
-site/
-.mkdocs/
-.mkdocs.yml.bak
-
-# Python
-__pycache__/
-*.egg-info/
-.venv/
-venv/
-.env
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
